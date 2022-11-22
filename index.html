@@ -1,0 +1,214 @@
+<nav id="navbar">
+  <header>CSS Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#Why_Use_CSS?"
+        >Why Use CSS?</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#CSS_Solved_a_Big_Problem">CSS Solved a Big Problem</a>
+    </li>
+    <li><a class="nav-link" href="#CSS_Saves_a_Lot_of_Work!">CSS Saves a Lot of Work!</a></li>
+    <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+    <li>
+      <a class="nav-link" href="#CSS_Selectors">CSS Selectors
+</a>
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+      </p>
+      <p>
+        CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.
+      </p>
+      <p>
+        After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification and individual modules progress. CSS modules now have version numbers, or levels, such as CSS Color Module Level 5
+      </p>
+
+      <h1>What is CSS?</h1>
+      <ul>
+        <li>
+        CSS stands for Cascading Style Sheets
+        </li>
+        <li>
+        CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+        </li>
+        <li>
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once
+        </li>
+        <li>
+        External stylesheets are stored in CSS files
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Why_Use_CSS?">
+    <header>Why use CSS?</header>
+    <article>
+      <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+    </article>
+  </section>
+  <p>CSS Example</p>
+  <code>body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</code>
+  <section class="main-section" id="CSS_Solved_a_Big_Problem">
+    <header>CSS Solved a Big Problem</header>
+    <article>
+      <p>
+        HTML was NEVER intended to contain tags for formatting a web page!
+
+HTML was created to describe the content of a web page, like:
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+
+When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+
+CSS removed the style formatting from the HTML page!
+      </p>
+
+    </article>
+  </section>
+  <section class="main-section" id="CSS_Saves_a_Lot_of_Work!">
+    <header>CSS Saves a Lot of Work!</header>
+    <p>
+      The style definitions are normally saved in external .css files.
+    </p>
+    <p>
+With an external stylesheet file, you can change the look of an entire website by changing just one file!
+</p>
+      
+  </section>
+  <section class="main-section" id="CSS_Syntax">
+    <header>CSS Syntax</header>
+    <p>
+      The selector points to the HTML element you want to style.
+    </p>
+
+    <p>
+The declaration block contains one or more declarations separated by semicolons.
+</p>
+<p>
+Each declaration includes a CSS property name and a value, separated by a colon.
+</p>
+<p>
+Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+    </p>
+  </section>
+  <p>Example</p>
+  <code>p {
+  color: red;
+  text-align: center;
+}
+</code>
+<p>Example explained:</p>
+<ul>
+  <li>p is a selector in CSS (it points to the HTML element you want to style: <p>).</li>
+  <li>color is a property, and red is the property value</li>
+  <li>text-align is a property, and center is the property value</p>
+  <section class="main-section" id="CSS_Selectors">
+    <header>CSS Selectors</header>
+    <article>
+      CSS selectors are used to "find" (or select) the HTML elements you want to style.
+      <p>
+        We can divide CSS selectors into five categories:
+<ul>
+<li>Simple selectors (select elements based on name, id, class)</li>
+<li>Combinator selectors (select elements based on a specific relationship between them)</li>
+<li>Pseudo-class selectors (select elements based on a certain state)</li>
+<li>Pseudo-elements selectors (select and style a part of an element)</li>
+<li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+</ul>
+<p>
+This page will explain the most basic CSS selectors.
+      </p>
+      <h1>The CSS element Selector</h1>
+      <p>Example:</p>
+      <code>p {
+  text-align: center;
+  color: red;
+}</code>
+<h1>The CSS id Selector</h1>
+<p>The id selector uses the id attribute of an HTML element to select a specific element.
+</p>
+<p>
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+</p>
+<p>
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+</p>
+      <p>Example:</p>
+      <code>#para1 {
+  text-align: center;
+  color: red;
+  }
+}</code>
+ <h1>The CSS class Selector</h1>
+ <p>The class selector selects HTML elements with a specific class attribute.
+</p>
+<p>
+To select elements with a specific class, write a period (.) character, followed by the class name.
+</p>
+      <p>Example:</p>
+      <code>.center {
+  text-align: center;
+  color: red;
+}
+}</code>
+ <p>You can also specify that only specific HTML elements should be affected by a class.
+</p>
+<p>In this example only <p> elements with class="center" will be red and center-aligned: 
+</p>
+      <p>Example:</p>
+      <code>p.center {
+  text-align: center;
+  color: red;
+}</code>
+<p>HTML elements can also refer to more than one class. 
+</p>
+<p>In this example the <p> element will be styled according to class="center" and to class="large": </p>
+      <p>Example:</p>
+      <code><p class="center large">This paragraph refers to two classes.</p></code>
+    </article>
+  </section>
+  
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/css/css_howto.asp"
+            target="_blank"
+            >W3schools</a
+          >
+          <link rel="stylesheet" href="styles.css"></link>
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
